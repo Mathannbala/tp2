@@ -967,13 +967,13 @@
 
   WINDOW.FontAwesomeDetection = _config;
 
-  var PRODUCTION = function () {
+  var PRODUCTION = (function () {
     try {
       return process.env.NODE_ENV === 'production';
     } catch (e) {
       return false;
     }
-  }();
+  }());
 
   function bunker(fn) {
     try {

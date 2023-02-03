@@ -174,13 +174,13 @@
   var HTML_CLASS_I2SVG_BASE_CLASS = 'fontawesome-i2svg';
   var MUTATION_APPROACH_ASYNC = 'async';
   var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
-  var PRODUCTION = function () {
+  var PRODUCTION = (function () {
     try {
       return "production" === 'production';
     } catch (e) {
       return false;
     }
-  }();
+  }());
   var PREFIX_TO_STYLE = {
     'fas': 'solid',
     'far': 'regular',
@@ -2115,7 +2115,7 @@
 
   var Library =
   /*#__PURE__*/
-  function () {
+  (function () {
     function Library() {
       _classCallCheck(this, Library);
 
@@ -2162,7 +2162,7 @@
     }]);
 
     return Library;
-  }();
+  }());
 
   function ensureCss() {
     if (config.autoAddCss && !_cssInserted) {
