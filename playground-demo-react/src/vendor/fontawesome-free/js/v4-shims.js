@@ -27,13 +27,13 @@
   var IS_IE = ~userAgent.indexOf('MSIE') || ~userAgent.indexOf('Trident/');
 
   var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-  var PRODUCTION = function () {
+  var PRODUCTION = (function () {
     try {
       return process.env.NODE_ENV === 'production';
     } catch (e) {
       return false;
     }
-  }();
+  }());
 
   function bunker(fn) {
     try {

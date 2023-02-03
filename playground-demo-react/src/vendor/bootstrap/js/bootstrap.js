@@ -253,7 +253,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Alert = /*#__PURE__*/function () {
+  var Alert = /*#__PURE__*/(function () {
     function Alert(element) {
       this._element = element;
     } // Getters
@@ -361,7 +361,7 @@
     }]);
 
     return Alert;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -415,7 +415,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Button = /*#__PURE__*/function () {
+  var Button = /*#__PURE__*/(function () {
     function Button(element) {
       this._element = element;
       this.shouldAvoidTriggerChange = false;
@@ -505,7 +505,7 @@
     }]);
 
     return Button;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -661,7 +661,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Carousel = /*#__PURE__*/function () {
+  var Carousel = /*#__PURE__*/(function () {
     function Carousel(element, config) {
       this._items = null;
       this._interval = null;
@@ -1150,7 +1150,7 @@
     }]);
 
     return Carousel;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -1221,7 +1221,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Collapse = /*#__PURE__*/function () {
+  var Collapse = /*#__PURE__*/(function () {
     function Collapse(element, config) {
       this._isTransitioning = false;
       this._element = element;
@@ -1492,7 +1492,7 @@
     }]);
 
     return Collapse;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -1604,7 +1604,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Dropdown = /*#__PURE__*/function () {
+  var Dropdown = /*#__PURE__*/(function () {
     function Dropdown(element, config) {
       this._element = element;
       this._popper = null;
@@ -2015,7 +2015,7 @@
     }]);
 
     return Dropdown;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -2102,7 +2102,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Modal = /*#__PURE__*/function () {
+  var Modal = /*#__PURE__*/(function () {
     function Modal(element, config) {
       this._config = this._getConfig(config);
       this._element = element;
@@ -2607,7 +2607,7 @@
     }]);
 
     return Modal;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -2868,7 +2868,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Tooltip = /*#__PURE__*/function () {
+  var Tooltip = /*#__PURE__*/(function () {
     function Tooltip(element, config) {
       if (typeof Popper__default['default'] === 'undefined') {
         throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
@@ -3481,7 +3481,7 @@
     }]);
 
     return Tooltip;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * jQuery
@@ -3544,7 +3544,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Popover = /*#__PURE__*/function (_Tooltip) {
+  var Popover = /*#__PURE__*/(function (_Tooltip) {
     _inheritsLoose(Popover, _Tooltip);
 
     function Popover() {
@@ -3661,7 +3661,7 @@
     }]);
 
     return Popover;
-  }(Tooltip);
+  }(Tooltip));
   /**
    * ------------------------------------------------------------------------
    * jQuery
@@ -3720,7 +3720,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var ScrollSpy = /*#__PURE__*/function () {
+  var ScrollSpy = /*#__PURE__*/(function () {
     function ScrollSpy(element, config) {
       var _this = this;
 
@@ -3937,7 +3937,7 @@
     }]);
 
     return ScrollSpy;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -4004,7 +4004,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Tab = /*#__PURE__*/function () {
+  var Tab = /*#__PURE__*/(function () {
     function Tab(element) {
       this._element = element;
     } // Getters
@@ -4168,7 +4168,7 @@
     }]);
 
     return Tab;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -4232,7 +4232,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var Toast = /*#__PURE__*/function () {
+  var Toast = /*#__PURE__*/(function () {
     function Toast(element, config) {
       this._element = element;
       this._config = this._getConfig(config);
@@ -4397,7 +4397,7 @@
     }]);
 
     return Toast;
-  }();
+  }());
   /**
    * ------------------------------------------------------------------------
    * jQuery

@@ -24,13 +24,13 @@
   var IS_IE = ~userAgent.indexOf('MSIE') || ~userAgent.indexOf('Trident/');
 
   var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-  var PRODUCTION = function () {
+  var PRODUCTION = (function () {
     try {
       return "production" === 'production';
     } catch (e) {
       return false;
     }
-  }();
+  }());
 
   function bunker(fn) {
     try {
